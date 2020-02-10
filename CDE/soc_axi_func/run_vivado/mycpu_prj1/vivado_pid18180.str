@@ -1,0 +1,346 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 18180
+License: Customer
+
+Current time: 	Sat Nov 30 14:16:39 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 144
+Available screens: 1
+Available disk space: 16 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Admin
+User home directory: C:/Users/Admin
+User working directory: F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2018.3
+RDI_DATADIR: D:/Vivado/2018.3/data
+RDI_BINDIR: D:/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/vivado.log
+Vivado journal file location: 	F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/vivado.jou
+Engine tmp dir: 	F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/.Xil/Vivado-18180-Lenovo-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2018.3
+XILINX_SDK: D:/SDK/2018.3
+XILINX_VIVADO: D:/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 484 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1060 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2330 ms.
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1150 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6000 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 11984ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11593 ms.
+// Thread: AWT-Windows
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.eventLoop(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Monitor HEventQueue
+// 	at java.base@9.0.4/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@9.0.4/java.lang.Thread.getAllStackTraces(Unknown Source)
+// 	at ui.utils.d.c.exx(SourceFile:484)
+// 	at ui.frmwork.b.e.construct(SourceFile:140)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Batik CleanerThread
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1846)
+// Thread: Thread-1
+// 	at ui.frmwork.str.a.k(SourceFile:373)
+// 	at ui.utils.m.log(SourceFile:1934)
+// 	at ui.frmwork.HTclEventBroker.i(SourceFile:236)
+// 	at ui.frmwork.HTclEventBroker.fireTclEvent(SourceFile:326)
+// Thread: Java2D Disposer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.Disposer.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: TimerQueue
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.DelayQueue.take(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.TimerQueue.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Process Messages
+// 	at java.base@9.0.4/java.lang.Thread.yield(Native Method)
+// 	at ui.frmwork.d.h.construct(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Signal Dispatcher
+// Thread: main
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.b(SourceFile:1030)
+// 	at ui.PlanAhead.jswMain(SourceFile:1084)
+// Thread: Common-Cleaner
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: AWT-EventQueue-0
+// 	at java.base@9.0.4/java.util.stream.ReduceOps.makeRef(Unknown Source)
+// 	at java.base@9.0.4/java.util.stream.ReferencePipeline.reduce(Unknown Source)
+// 	at java.management@9.0.4/java.lang.management.ManagementFactory$PlatformMBeanFinder.findSingleton(Unknown Source)
+// 	at java.management@9.0.4/java.lang.management.ManagementFactory.getPlatformMXBean(Unknown Source)
+// 	at java.management@9.0.4/java.lang.management.ManagementFactory.getOperatingSystemMXBean(Unknown Source)
+// 	at ui.utils.m.esB(SourceFile:685)
+// 	at ui.utils.m.esC(SourceFile:691)
+// 	at ui.utils.p.a.qG(SourceFile:101)
+// 	at ui.utils.p.a.T(SourceFile:34)
+// 	at ui.frmwork.str.a.edn(SourceFile:327)
+// 	at ui.frmwork.str.a.lY(SourceFile:501)
+// 	at ui.frmwork.str.a.j(SourceFile:88)
+// 	at ui.frmwork.str.b.da(SourceFile:343)
+// 	at ui.utils.C.actionPerformed(SourceFile:65)
+// 	at java.desktop@9.0.4/javax.swing.Timer.fireActionPerformed(Unknown Source)
+// 	at ui.utils.B.fireActionPerformed(SourceFile:116)
+// 	at java.desktop@9.0.4/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+// Thread: Finalizer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+// Thread: AWT-Shutdown
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.AWTAutoShutdown.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Attach Listener
+// Thread: Reference Handler
+// 	at java.base@9.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference.access$000(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+// WARNING: HEventQueue.dispatchEvent() is taking  7616 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2705 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// HMemoryUtils.trashcanNow. Engine heap size: 484 MB. GUI used memory: 52 MB. Current time: 11/30/19, 2:17:01 PM CST
+// [GUI Memory]: 55 MB (+54962kb) [00:08:24]
+// [Engine Memory]: 484 MB (+356530kb) [00:08:24]
+// Opening Vivado Project: F:\study\course_design2019\CDE\soc_axi_func\run_vivado\mycpu_prj1\mycpu.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  23943 ms.
+// Tcl Message: open_project F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 514 MB. GUI used memory: 51 MB. Current time: 11/30/19, 2:17:56 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 50 MB. Current time: 11/30/19, 2:18:16 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2586 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 67 MB (+10176kb) [00:11:45]
+// [Engine Memory]: 572 MB (+66012kb) [00:11:45]
+// [GUI Memory]: 105 MB (+36294kb) [00:11:55]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4766 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  60434 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2545 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6763 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4902 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2179 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:01:26 ; elapsed = 00:03:36 . Memory (MB): peak = 771.590 ; gain = 206.977 
+// HMemoryUtils.trashcanNow. Engine heap size: 768 MB. GUI used memory: 62 MB. Current time: 11/30/19, 2:21:19 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2504 ms.
+// Project name: mycpu; location: F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1; part: xc7a200tfbg676-2
+// [Engine Memory]: 768 MB (+176357kb) [00:12:37]
+// WARNING: updateGUI() is taking  1080 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1499 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1022 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1510 ms. Increasing delay to 4530 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 1954ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1954 ms.
+dismissDialog("Open Project"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2609 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 549ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1220 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3724 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4061 ms. Increasing delay to 12183 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 892 ms. Decreasing delay to 2892 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 270ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1058 ms.
+// [GUI Memory]: 118 MB (+8090kb) [00:14:04]
+// Elapsed time: 86 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 7); // B (D, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1689 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1445 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1060 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12922 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12657 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1569 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 768 MB. GUI used memory: 64 MB. Current time: 11/30/19, 2:51:22 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  5857 ms.
+// Elapsed time: 3015 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, cp)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 10); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v)]", 12); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v)]", 13); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v)]", 14); // B (D, cp)
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v)]", 15); // B (D, cp)
+// PAPropertyPanels.initPanels (EX.v) elapsed time: 1.3s
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), ex_stage : EX (EX.v)]", 20, false); // B (D, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2422 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), ex_stage : EX (EX.v)]", 20, false, false, false, false, false, true); // B (D, cp) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1946 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), ex_stage : EX (EX.v)]", 20, false); // B (D, cp)
+selectCodeEditor("EX.v", 198, 166); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1393 ms.
+// Elapsed time: 12 seconds
+selectCodeEditor("EX.v", 327, 174); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v)]", 18, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v), reg_gen : RegGen (RegGen.v)]", 19, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v), reg_gen : RegGen (RegGen.v)]", 19, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v), reg_gen : RegGen (RegGen.v)]", 19, false); // B (D, cp)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EX.v", 1); // k (j, cp)
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ID.v", 2); // k (j, cp)
+selectCodeEditor("ID.v", 370, 169); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v), funct_gen : FunctGen (FunctGen.v)]", 20, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v), funct_gen : FunctGen (FunctGen.v)]", 20, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v), funct_gen : FunctGen (FunctGen.v)]", 20, false); // B (D, cp)
+selectCodeEditor("FunctGen.v", 491, 158); // cl (w, cp)
+selectCodeEditor("FunctGen.v", 338, 171); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("FunctGen.v", 385, 168); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v), operand_gen : OperandGen (OperandGen.v)]", 21, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v), operand_gen : OperandGen (OperandGen.v)]", 21, false, false, false, false, false, true); // B (D, cp) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1044 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, soc_axi_lite_top (soc_axi_lite_top.v), u_cpu : mycpu_top (mycpu_top.v), tinymips : TinyMIPS (TinyMIPS.v), core : Core (Core.v), id_stage : ID (ID.v), operand_gen : OperandGen (OperandGen.v)]", 21, false); // B (D, cp)
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// HMemoryUtils.trashcanNow. Engine heap size: 768 MB. GUI used memory: 64 MB. Current time: 11/30/19, 3:21:21 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1076 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 768 MB. GUI used memory: 64 MB. Current time: 11/30/19, 3:51:21 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2601 ms.
+// Elapsed time: 2946 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "EX.v", 1); // k (j, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  11883 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2782 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1543 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1893 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4022 ms. Increasing delay to 12066 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2547 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1787 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1787 ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1888 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3625 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 227 ms. Decreasing delay to 2227 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1845 ms. Increasing delay to 5535 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  60054 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 768 MB. GUI used memory: 58 MB. Current time: 11/30/19, 4:21:22 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  246420 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 251287 ms. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5031 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  581131 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2600 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4846770 ms.
+// WARNING: HTimer (HMemoryUtils Timer) is taking 2707ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2827 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1066 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 768 MB. GUI used memory: 59 MB. Current time: 11/30/19, 5:59:56 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  848348 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2221 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1204 ms.
+// Elapsed time: 7992 seconds
+closeMainWindow("mycpu - [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.xpr] - Vivado 2018.3"); // cp
+// A (cp): Exit Vivado: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3096 ms.

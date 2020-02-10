@@ -1,0 +1,53 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/include/opcode.v" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'OP_BLTZ' redefined [F:/study/course_design2019/CDE/cpu/include/opcode.v:16]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [F:/study/course_design2019/CDE/cpu/core/stage/id/OperandGen.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/ID_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_tb

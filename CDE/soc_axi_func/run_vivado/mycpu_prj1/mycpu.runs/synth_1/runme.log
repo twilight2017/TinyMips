@@ -1,0 +1,981 @@
+
+*** Running vivado
+    with args -log soc_axi_lite_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_axi_lite_top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source soc_axi_lite_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 320.297 ; gain = 76.691
+Command: synth_design -top soc_axi_lite_top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22948 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 480.418 ; gain = 100.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_axi_lite_top' [F:/study/course_design2019/CDE/soc_axi_func/rtl/soc_axi_lite_top.v:65]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (1#1) [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/clk_pll_stub.v:5]
+WARNING: [Synth 8-85] always block has no event control specified [F:/study/course_design2019/CDE/soc_axi_func/rtl/soc_axi_lite_top.v:108]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [F:/study/course_design2019/CDE/cpu/mycpu_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'TinyMIPS' [F:/study/course_design2019/CDE/cpu/TinyMIPS.v:6]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/study/course_design2019/CDE/cpu/TinyMIPS.v:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/study/course_design2019/CDE/cpu/TinyMIPS.v:92]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/study/course_design2019/CDE/cpu/TinyMIPS.v:94]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/study/course_design2019/CDE/cpu/TinyMIPS.v:95]
+INFO: [Synth 8-6157] synthesizing module 'Core' [F:/study/course_design2019/CDE/cpu/core/Core.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PC' [F:/study/course_design2019/CDE/cpu/core/stage/if/PC.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [F:/study/course_design2019/CDE/cpu/core/stage/if/PC.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IFID' [F:/study/course_design2019/CDE/cpu/core/stage/if/IFID.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PipelineDeliver' [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipelineDeliver' (3#1) [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IFID' (4#1) [F:/study/course_design2019/CDE/cpu/core/stage/if/IFID.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ID' [F:/study/course_design2019/CDE/cpu/core/stage/id/ID.v:8]
+INFO: [Synth 8-6157] synthesizing module 'RegGen' [F:/study/course_design2019/CDE/cpu/core/stage/id/RegGen.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RegGen' (5#1) [F:/study/course_design2019/CDE/cpu/core/stage/id/RegGen.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FunctGen' [F:/study/course_design2019/CDE/cpu/core/stage/id/FunctGen.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'FunctGen' (6#1) [F:/study/course_design2019/CDE/cpu/core/stage/id/FunctGen.v:7]
+INFO: [Synth 8-6157] synthesizing module 'OperandGen' [F:/study/course_design2019/CDE/cpu/core/stage/id/OperandGen.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'OperandGen' (7#1) [F:/study/course_design2019/CDE/cpu/core/stage/id/OperandGen.v:7]
+INFO: [Synth 8-6157] synthesizing module 'BranchGen' [F:/study/course_design2019/CDE/cpu/core/stage/id/BranchGen.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'BranchGen' (8#1) [F:/study/course_design2019/CDE/cpu/core/stage/id/BranchGen.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MemGen' [F:/study/course_design2019/CDE/cpu/core/stage/id/MemGen.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MemGen' (9#1) [F:/study/course_design2019/CDE/cpu/core/stage/id/MemGen.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (10#1) [F:/study/course_design2019/CDE/cpu/core/stage/id/ID.v:8]
+INFO: [Synth 8-6157] synthesizing module 'IDEX' [F:/study/course_design2019/CDE/cpu/core/stage/id/IDEX.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PipelineDeliver__parameterized0' [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipelineDeliver__parameterized0' (10#1) [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PipelineDeliver__parameterized1' [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipelineDeliver__parameterized1' (10#1) [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PipelineDeliver__parameterized2' [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipelineDeliver__parameterized2' (10#1) [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PipelineDeliver__parameterized3' [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipelineDeliver__parameterized3' (10#1) [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineDeliver.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IDEX' (11#1) [F:/study/course_design2019/CDE/cpu/core/stage/id/IDEX.v:5]
+INFO: [Synth 8-6157] synthesizing module 'EX' [F:/study/course_design2019/CDE/cpu/core/stage/ex/EX.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'EX' (12#1) [F:/study/course_design2019/CDE/cpu/core/stage/ex/EX.v:6]
+INFO: [Synth 8-6157] synthesizing module 'EXMEM' [F:/study/course_design2019/CDE/cpu/core/stage/ex/EXMEM.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'EXMEM' (13#1) [F:/study/course_design2019/CDE/cpu/core/stage/ex/EXMEM.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [F:/study/course_design2019/CDE/cpu/core/stage/mem/MEM.v:5]
+INFO: [Synth 8-226] default block is never used [F:/study/course_design2019/CDE/cpu/core/stage/mem/MEM.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (14#1) [F:/study/course_design2019/CDE/cpu/core/stage/mem/MEM.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB' [F:/study/course_design2019/CDE/cpu/core/stage/mem/MEMWB.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB' (15#1) [F:/study/course_design2019/CDE/cpu/core/stage/mem/MEMWB.v:5]
+INFO: [Synth 8-6157] synthesizing module 'WB' [F:/study/course_design2019/CDE/cpu/core/stage/wb/WB.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'WB' (16#1) [F:/study/course_design2019/CDE/cpu/core/stage/wb/WB.v:5]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [F:/study/course_design2019/CDE/cpu/core/storage/RegFile.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (17#1) [F:/study/course_design2019/CDE/cpu/core/storage/RegFile.v:5]
+INFO: [Synth 8-6157] synthesizing module 'RegReadProxy' [F:/study/course_design2019/CDE/cpu/core/storage/RegReadProxy.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'RegReadProxy' (18#1) [F:/study/course_design2019/CDE/cpu/core/storage/RegReadProxy.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PipelineController' [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineController.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PipelineController' (19#1) [F:/study/course_design2019/CDE/cpu/core/pipeline/PipelineController.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Core' (20#1) [F:/study/course_design2019/CDE/cpu/core/Core.v:5]
+INFO: [Synth 8-6157] synthesizing module 'StaticMMU' [F:/study/course_design2019/CDE/cpu/mmu/StaticMMU.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'StaticMMU' (21#1) [F:/study/course_design2019/CDE/cpu/mmu/StaticMMU.v:7]
+INFO: [Synth 8-6157] synthesizing module 'AXIAdapter' [F:/study/course_design2019/CDE/cpu/bus/AXIAdapter.v:6]
+	Parameter kStateIdle bound to: 0 - type: integer 
+	Parameter kStateRAddr bound to: 1 - type: integer 
+	Parameter kStateRData bound to: 2 - type: integer 
+	Parameter kStateWAddr bound to: 3 - type: integer 
+	Parameter kStateWData bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/study/course_design2019/CDE/cpu/bus/AXIAdapter.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'AXIAdapter' (22#1) [F:/study/course_design2019/CDE/cpu/bus/AXIAdapter.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'core'. This will prevent further optimization [F:/study/course_design2019/CDE/cpu/TinyMIPS.v:104]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'static_mmu'. This will prevent further optimization [F:/study/course_design2019/CDE/cpu/TinyMIPS.v:131]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rom_adapter'. This will prevent further optimization [F:/study/course_design2019/CDE/cpu/TinyMIPS.v:142]
+INFO: [Synth 8-6155] done synthesizing module 'TinyMIPS' (23#1) [F:/study/course_design2019/CDE/cpu/TinyMIPS.v:6]
+INFO: [Synth 8-6157] synthesizing module 'InternalCrossbar' [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/InternalCrossbar_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'InternalCrossbar' (24#1) [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/InternalCrossbar_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (25#1) [F:/study/course_design2019/CDE/cpu/mycpu_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap' [F:/study/course_design2019/CDE/soc_axi_func/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap' (26#1) [F:/study/course_design2019/CDE/soc_axi_func/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter' [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter' (27#1) [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1x2' [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1x2' (28#1) [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap_ram' [F:/study/course_design2019/CDE/soc_axi_func/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'axi_ram' [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (29#1) [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27224-Lenovo-PC/realtime/axi_ram_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element pf_r2r_reg was removed.  [F:/study/course_design2019/CDE/soc_axi_func/rtl/ram_wrap/axi_wrap_ram.v:107]
+WARNING: [Synth 8-6014] Unused sequential element pf_b2b_reg was removed.  [F:/study/course_design2019/CDE/soc_axi_func/rtl/ram_wrap/axi_wrap_ram.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap_ram' (30#1) [F:/study/course_design2019/CDE/soc_axi_func/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [F:/study/course_design2019/CDE/soc_axi_func/rtl/CONFREG/confreg.v:73]
+	Parameter SIMULATION bound to: 1'b0 
+WARNING: [Synth 8-6014] Unused sequential element buf_len_reg was removed.  [F:/study/course_design2019/CDE/soc_axi_func/rtl/CONFREG/confreg.v:192]
+WARNING: [Synth 8-6014] Unused sequential element buf_size_reg was removed.  [F:/study/course_design2019/CDE/soc_axi_func/rtl/CONFREG/confreg.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (31#1) [F:/study/course_design2019/CDE/soc_axi_func/rtl/CONFREG/confreg.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'soc_axi_lite_top' (32#1) [F:/study/course_design2019/CDE/soc_axi_func/rtl/soc_axi_lite_top.v:65]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[7]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[6]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[5]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[4]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arsize[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arsize[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arsize[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arburst[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arburst[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlock[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlock[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arprot[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arprot[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arprot[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[7]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[6]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[5]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[4]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awsize[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awsize[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awsize[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awburst[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awburst[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlock[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlock[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awprot[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awprot[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awprot[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arlock[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arlock[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arprot[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arprot[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arprot[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awlock[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awlock[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awprot[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awprot[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awprot[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[0]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port rid[3]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port rid[2]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port rid[1]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port rid[0]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port rresp[1]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port rresp[0]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port bid[3]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port bid[2]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port bid[1]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port bid[0]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port bresp[1]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port bresp[0]
+WARNING: [Synth 8-3331] design AXIAdapter has unconnected port bvalid
+WARNING: [Synth 8-3331] design BranchGen has unconnected port inst[31]
+WARNING: [Synth 8-3331] design BranchGen has unconnected port inst[30]
+WARNING: [Synth 8-3331] design BranchGen has unconnected port inst[29]
+WARNING: [Synth 8-3331] design BranchGen has unconnected port inst[28]
+WARNING: [Synth 8-3331] design BranchGen has unconnected port inst[27]
+WARNING: [Synth 8-3331] design BranchGen has unconnected port inst[26]
+WARNING: [Synth 8-3331] design mycpu_top has unconnected port int[6]
+WARNING: [Synth 8-3331] design mycpu_top has unconnected port int[5]
+WARNING: [Synth 8-3331] design mycpu_top has unconnected port int[4]
+WARNING: [Synth 8-3331] design mycpu_top has unconnected port int[3]
+WARNING: [Synth 8-3331] design mycpu_top has unconnected port int[2]
+WARNING: [Synth 8-3331] design mycpu_top has unconnected port int[1]
+WARNING: [Synth 8-3331] design mycpu_top has unconnected port int[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 542.102 ; gain = 162.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 542.102 ; gain = 162.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 542.102 ; gain = 162.484
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Finished Parsing XDC File [f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Parsing XDC File [f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Finished Parsing XDC File [f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Parsing XDC File [f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Finished Parsing XDC File [f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Parsing XDC File [f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter/axi_clock_converter_in_context.xdc] for cell 'u_axi_clock_sync'
+Finished Parsing XDC File [f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter/axi_clock_converter_in_context.xdc] for cell 'u_axi_clock_sync'
+Parsing XDC File [f:/study/course_design2019/CDE/cpu/ip/InternalCrossbar/InternalCrossbar/InternalCrossbar_in_context.xdc] for cell 'u_cpu/internal_crossbar'
+Finished Parsing XDC File [f:/study/course_design2019/CDE/cpu/ip/InternalCrossbar/InternalCrossbar/InternalCrossbar_in_context.xdc] for cell 'u_cpu/internal_crossbar'
+Parsing XDC File [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/soc_lite.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/soc_lite.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'pll.clk_pll/inst/plle2_adv_inst/CLKOUT1'. [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/soc_lite.xdc:91]
+WARNING: [Vivado 12-508] No pins matched 'pll.clk_pll/inst/plle2_adv_inst/CLKOUT0'. [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/soc_lite.xdc:92]
+Finished Parsing XDC File [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/soc_lite.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/soc_lite.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/study/course_design2019/CDE/soc_axi_func/run_vivado/soc_lite.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 953.906 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 953.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 953.906 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 953.906 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_axi_clock_sync' at clock pin 'm_axi_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_axi_crossbar_1x2' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_axi_ram/ram' at clock pin 's_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_cpu/internal_crossbar' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:01:07 . Memory (MB): peak = 953.906 ; gain = 574.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:01:07 . Memory (MB): peak = 953.906 ; gain = 574.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  f:/study/course_design2019/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for u_axi_crossbar_1x2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \pll.clk_pll . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_axi_ram/ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_axi_clock_sync. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/internal_crossbar. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:08 . Memory (MB): peak = 953.906 ; gain = 574.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "reg_read_en_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_read_en_2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_write_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "branch_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_read_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_write_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_sign_ext_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/study/course_design2019/CDE/cpu/core/stage/ex/EX.v:51]
+INFO: [Synth 8-5544] ROM "ram_write_sel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "registers_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[31]" won't be mapped to RAM because it is too sparse
+.p 12
+.s 6
+.r kStateIdle
+	 Default kStateIdle 
+	 kStateIdle kStateIdle 
+	 kStateIdle kStateWAddr 
+	 kStateIdle kStateRAddr 
+	 kStateRAddr kStateRData 
+	 kStateRAddr kStateRAddr 
+	 kStateRData kStateIdle 
+	 kStateRData kStateRData 
+	 kStateWAddr kStateWData 
+	 kStateWAddr kStateWAddr 
+	 kStateWData kStateIdle 
+	 kStateWData kStateWData 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AXIAdapter'
+INFO: [Synth 8-5544] ROM "axi_wsize" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'confreg'
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pseudo_random_230" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "btn_key_tmp13" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "num_csn" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "num_a_g" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'AXIAdapter', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              kStateIdle |                              000 |                              000
+             kStateWAddr |                              011 |                              011
+             kStateWData |                              100 |                              100
+             kStateRAddr |                              001 |                              001
+             kStateRData |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                              000 |                              000
+                  iSTATE |                              101 |                              001
+                 iSTATE0 |                              100 |                              010
+                 iSTATE1 |                              011 |                              011
+                 iSTATE2 |                              010 |                              100
+                 iSTATE3 |                              001 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'confreg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:01:14 . Memory (MB): peak = 953.906 ; gain = 574.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	               32 Bit    Registers := 70    
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 44    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 44    
+	   4 Input     32 Bit        Muxes := 4     
+	  10 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 4     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   3 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 20    
+	   8 Input      3 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 12    
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 88    
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module soc_axi_lite_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module PipelineDeliver 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module RegGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module FunctGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      6 Bit        Muxes := 1     
+Module OperandGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+Module BranchGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module MemGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module PipelineDeliver__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PipelineDeliver__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PipelineDeliver__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PipelineDeliver__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module EX 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MEM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+Module WB 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 32    
+Module RegReadProxy 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+Module PipelineController 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module StaticMMU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+Module AXIAdapter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   8 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module TinyMIPS 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axi_wrap 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+Module axi_wrap_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module confreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 21    
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 16    
+	   6 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'u_confreg/write_timer_end_r1_reg' (FD) to 'u_confreg/write_timer_begin_r3_reg'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[1]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[2]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[3]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[4]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[5]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[6]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[7]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[8]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[9]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[10]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[11]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[12]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[13]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[14]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[15]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[16]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[17]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[18]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[19]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[20]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[21]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[22]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[23]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[24]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[25]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[26]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[27]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[28]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[29]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[30]' (FDRE) to 'u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_confreg/simu_flag_reg[31]' (FDRE) to 'u_confreg/simu_flag_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_confreg/simu_flag_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_cpu/tinymips/core/idex/ff_mem_sel/out_reg[3]' (FDRE) to 'u_cpu/tinymips/core/idex/ff_mem_sel/out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/tinymips/core/idex/ff_mem_sel/out_reg[1]' (FDRE) to 'u_cpu/tinymips/core/idex/ff_mem_sel/out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/tinymips/core/exmem/ff_mem_sel/out_reg[3]' (FDRE) to 'u_cpu/tinymips/core/exmem/ff_mem_sel/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/tinymips/core/exmem/ff_mem_sel/out_reg[1]' (FDRE) to 'u_cpu/tinymips/core/exmem/ff_mem_sel/out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/tinymips/core/memwb/ff_mem_sel/out_reg[3]' (FDRE) to 'u_cpu/tinymips/core/memwb/ff_mem_sel/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/tinymips/core/memwb/ff_mem_sel/out_reg[2]' (FDRE) to 'u_cpu/tinymips/core/memwb/ff_mem_sel/out_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:17 ; elapsed = 00:02:38 . Memory (MB): peak = 953.906 ; gain = 574.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pll.clk_pll/cpu_clk' to pin 'pll.clk_pll/bbstub_cpu_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pll.clk_pll/sys_clk' to pin 'pll.clk_pll/bbstub_sys_clk/O'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:46 ; elapsed = 00:03:12 . Memory (MB): peak = 953.906 ; gain = 574.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:04 ; elapsed = 00:03:32 . Memory (MB): peak = 1001.656 ; gain = 622.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/tinymips/core /\regfile/registers_reg[0][31] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:15 ; elapsed = 00:03:43 . Memory (MB): peak = 1002.668 ; gain = 623.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:20 ; elapsed = 00:03:49 . Memory (MB): peak = 1002.668 ; gain = 623.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:20 ; elapsed = 00:03:49 . Memory (MB): peak = 1002.668 ; gain = 623.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:22 ; elapsed = 00:03:51 . Memory (MB): peak = 1002.668 ; gain = 623.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:22 ; elapsed = 00:03:51 . Memory (MB): peak = 1002.668 ; gain = 623.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:22 ; elapsed = 00:03:51 . Memory (MB): peak = 1002.668 ; gain = 623.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:22 ; elapsed = 00:03:51 . Memory (MB): peak = 1002.668 ; gain = 623.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |clk_pll             |         1|
+|2     |axi_clock_converter |         1|
+|3     |axi_crossbar_1x2    |         1|
+|4     |axi_ram             |         1|
+|5     |InternalCrossbar    |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |InternalCrossbar    |     1|
+|2     |axi_clock_converter |     1|
+|3     |axi_crossbar_1x2    |     1|
+|4     |axi_ram             |     1|
+|5     |clk_pll             |     1|
+|6     |CARRY4              |    78|
+|7     |LUT1                |    16|
+|8     |LUT2                |   219|
+|9     |LUT3                |   304|
+|10    |LUT4                |   248|
+|11    |LUT5                |   405|
+|12    |LUT6                |  1314|
+|13    |MUXF7               |   293|
+|14    |MUXF8               |    31|
+|15    |FDRE                |  2386|
+|16    |FDSE                |    44|
+|17    |IBUF                |    15|
+|18    |OBUF                |    39|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+-----------------------------------+------+
+|      |Instance                       |Module                             |Cells |
++------+-------------------------------+-----------------------------------+------+
+|1     |top                            |                                   |  6292|
+|2     |  u_axi_ram                    |axi_wrap_ram                       |   103|
+|3     |  u_confreg                    |confreg                            |  1359|
+|4     |  u_cpu                        |mycpu_top                          |  4171|
+|5     |    tinymips                   |TinyMIPS                           |  3876|
+|6     |      core                     |Core                               |  3575|
+|7     |        exmem                  |EXMEM                              |   221|
+|8     |          ff_current_pc_addr   |PipelineDeliver_18                 |    32|
+|9     |          ff_mem_read_flag     |PipelineDeliver__parameterized2_19 |    31|
+|10    |          ff_mem_sel           |PipelineDeliver__parameterized3_20 |     4|
+|11    |          ff_mem_sign_ext_flag |PipelineDeliver__parameterized2_21 |     1|
+|12    |          ff_mem_write_data    |PipelineDeliver_22                 |    64|
+|13    |          ff_mem_write_flag    |PipelineDeliver__parameterized2_23 |     2|
+|14    |          ff_reg_write_addr    |PipelineDeliver__parameterized1_24 |     6|
+|15    |          ff_reg_write_en      |PipelineDeliver__parameterized2_25 |     2|
+|16    |          ff_result            |PipelineDeliver_26                 |    79|
+|17    |        id_stage               |ID                                 |    52|
+|18    |          branch_gen           |BranchGen                          |    44|
+|19    |          operand_gen          |OperandGen                         |     8|
+|20    |        idex                   |IDEX                               |   667|
+|21    |          ff_current_pc_addr   |PipelineDeliver_7                  |    32|
+|22    |          ff_funct             |PipelineDeliver__parameterized0    |   100|
+|23    |          ff_mem_read_flag     |PipelineDeliver__parameterized2_8  |     1|
+|24    |          ff_mem_sel           |PipelineDeliver__parameterized3_9  |     2|
+|25    |          ff_mem_sign_ext_flag |PipelineDeliver__parameterized2_10 |     1|
+|26    |          ff_mem_write_data    |PipelineDeliver_11                 |    32|
+|27    |          ff_mem_write_flag    |PipelineDeliver__parameterized2_12 |     3|
+|28    |          ff_operand_1         |PipelineDeliver_13                 |   189|
+|29    |          ff_operand_2         |PipelineDeliver_14                 |   270|
+|30    |          ff_reg_write_addr    |PipelineDeliver__parameterized1_15 |     5|
+|31    |          ff_reg_write_en      |PipelineDeliver__parameterized2_16 |     2|
+|32    |          ff_shamt             |PipelineDeliver__parameterized1_17 |    30|
+|33    |        ifid                   |IFID                               |   521|
+|34    |          ff_addr              |PipelineDeliver_5                  |    34|
+|35    |          ff_inst              |PipelineDeliver_6                  |   487|
+|36    |        memwb                  |MEMWB                              |   139|
+|37    |          ff_current_pc_addr   |PipelineDeliver                    |    32|
+|38    |          ff_mem_read_flag     |PipelineDeliver__parameterized2    |     1|
+|39    |          ff_mem_sel           |PipelineDeliver__parameterized3    |     2|
+|40    |          ff_mem_sign_ext_flag |PipelineDeliver__parameterized2_0  |     1|
+|41    |          ff_mem_write_flag    |PipelineDeliver__parameterized2_1  |     1|
+|42    |          ff_ram_read_data     |PipelineDeliver_2                  |    33|
+|43    |          ff_reg_write_addr    |PipelineDeliver__parameterized1    |    36|
+|44    |          ff_reg_write_en      |PipelineDeliver__parameterized2_3  |     1|
+|45    |          ff_result            |PipelineDeliver_4                  |    32|
+|46    |        pc_stage               |PC                                 |    44|
+|47    |        regfile                |RegFile                            |  1886|
+|48    |        wb_stage               |WB                                 |    45|
+|49    |      static_mmu               |StaticMMU                          |     4|
+|50    |      rom_adapter              |AXIAdapter                         |   145|
+|51    |      ram_adapter              |AXIAdapter__2                      |   145|
+|52    |  u_cpu_axi_wrap               |axi_wrap                           |    12|
++------+-------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:22 ; elapsed = 00:03:51 . Memory (MB): peak = 1002.668 ; gain = 623.051
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 95 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:41 ; elapsed = 00:03:14 . Memory (MB): peak = 1002.668 ; gain = 211.246
+Synthesis Optimization Complete : Time (s): cpu = 00:03:23 ; elapsed = 00:03:52 . Memory (MB): peak = 1002.668 ; gain = 623.051
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 402 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1002.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+248 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:33 ; elapsed = 00:04:08 . Memory (MB): peak = 1002.668 ; gain = 630.004
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1002.668 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/soc_axi_lite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_axi_lite_top_utilization_synth.rpt -pb soc_axi_lite_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 20 22:55:14 2019...

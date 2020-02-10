@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 13 08:18:53 2019
+# Process ID: 16564
+# Current directory: F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2404 F:\study\course_design2019\CDE\soc_axi_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.xpr
+
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_top.tcl
+file mkdir F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/ID_tb.v w ]
+add_files -fileset sim_1 F:/study/course_design2019/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/ID_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ID_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source ID_tb.tcl
+update_compile_order -fileset sim_1
+close_sim
+close_sim
